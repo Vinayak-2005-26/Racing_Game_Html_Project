@@ -168,7 +168,7 @@ body {
 text-align: center;
 display: inline-block;
 background-color: rgb(222, 219, 219);
-margin-left: 40%;
+margin-left: 25%;
 margin-top: 6px;
 }
 #donate{
@@ -213,15 +213,15 @@ margin-top: 6px;
   
     .hi {
       display: inline-block;
-      margin-bottom: 30px;
       padding: 10px 20px;
       font-size: 14px;
-      background: linear-gradient(135deg, #ff4d4d, #ff1a75);
+      border: #efefef 3px solid;
       color: white;
       text-decoration: none;
       border-radius: 10px;
-      box-shadow: 0 0 10px #ff4d4d;
+      box-shadow: 0 0 10px #fafafa;
       transition: all 0.3s;
+      margin-right: 0px;
     }
 
     .hi:hover {
@@ -230,6 +230,6 @@ margin-top: 6px;
     }
 
     .hi {
-      margin-top: 50px;
+      margin-top: 10px;
       font-size: 18px;
     }
