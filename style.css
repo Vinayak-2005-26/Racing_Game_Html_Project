@@ -210,7 +210,7 @@ margin-top: 6px;
     margin-top: 15%;
   }
   
-    .back-btn {
+    .hi {
       display: inline-block;
       margin-bottom: 30px;
       padding: 10px 20px;
@@ -223,12 +223,12 @@ margin-top: 6px;
       transition: all 0.3s;
     }
 
-    .back-btn:hover {
+    .hi:hover {
       background: linear-gradient(135deg, #ff1a75, #ff4d4d);
       box-shadow: 0 0 15px #ff1a75;
     }
 
-    .game-content {
+    .hi {
       margin-top: 50px;
       font-size: 18px;
     }
