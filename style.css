@@ -209,4 +209,27 @@ margin-top: 6px;
     height:70vh;
     margin-top: 15%;
   }
+  
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 30px;
+      padding: 10px 20px;
+      font-size: 14px;
+      background: linear-gradient(135deg, #ff4d4d, #ff1a75);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff4d4d;
+      transition: all 0.3s;
+    }
+
+    .back-btn:hover {
+      background: linear-gradient(135deg, #ff1a75, #ff4d4d);
+      box-shadow: 0 0 15px #ff1a75;
+    }
+
+    .game-content {
+      margin-top: 50px;
+      font-size: 18px;
+    }
 }
