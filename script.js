@@ -1,7 +1,6 @@
 $(document).ready(function() {
   var anim_id;
 
-  //saving dom objects to variables
   var container = $('#container');
   var car = $('#car');
   var car_1 = $('#car_1');
@@ -14,14 +13,12 @@ $(document).ready(function() {
   var restart_btn = $('#restart');
   var score = $('#score');
 
-  //saving some initial setup
   var container_left = parseInt(container.css('left'));
   var container_width = parseInt(container.width());
   var container_height = parseInt(container.height());
   var car_width = parseInt(car.width());
   var car_height = parseInt(car.height());
 
-  //some other declarations
   var game_over = false;
 
   var score_counter = 1;
@@ -34,8 +31,6 @@ $(document).ready(function() {
   var move_up = false;
   var move_down = false;
 
-  /* ------------------------------GAME CODE STARTS HERE------------------------------------------- */
-  /* Move the cars */
   $(document).on('keydown', function(e) {
       if (game_over === false) {
           var key = e.keyCode;
@@ -99,7 +94,6 @@ $(document).ready(function() {
       }
   }
 
-  /* Move the cars and lines */
   anim_id = requestAnimationFrame(repeat);
 
   function repeat() {
@@ -161,18 +155,15 @@ $(document).ready(function() {
       restart_div.slideDown();
       restart_btn.focus();
       const song = document.getElementById("song");
-      song.pause();      // Pause the audio
+      song.pause();    
       song.currentTime = 0; 
   }
-    // Double-click anywhere to restart the game if it's over
+  
   $(document).on('click', function() {
       if (game_over === true) {
           location.reload();
       }
   });
-
-
-  /* ------------------------------GAME CODE ENDS HERE------------------------------------------- */
 
 
   function collision($div1, $div2) {
@@ -194,12 +185,11 @@ $(document).ready(function() {
   }
  let isReady = false;
 
-  // Enable audio playback permission after first click
   window.addEventListener('click', () => {
     const song = document.getElementById("song");
-    song.play();        // Play once to unlock autoplay
-    song.pause();       // Pause it immediately
-    isReady = true;     // Mark audio as ready
+    song.play();     
+    song.pause();  
+    isReady = true;     
   });
 
 window.addEventListener('click', () => {
